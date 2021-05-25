@@ -1,13 +1,162 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+a{
+    
+    color: white;
+    text-decoration: none;
+    
+    font-size: 50px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a.active_class{
+    color:black;
 }
+a:hover{
+    transform: scale(1.04, 1.04);
+}
+
+.main-div{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    line-height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:cornflowerblue;
+}
+
+.main-div:hover{
+    background-color:darkcyan;
+}
+
+/*.center-div{
+    width: 100%;
+    display: flex;
+    
+    justify-content: center;
+    overflow-x: scroll;
+    
+ }*/
+ 
+ 
+ 
+ h1{
+     text-align: center;
+ }
+ 
+ table{
+     width: 60%;
+     margin: auto;
+     margin-top: 80px;
+     border: 2px solid black;
+     
+ }
+ 
+ thead{
+    padding: 20px;
+    color: white;
+    background-color: blue;
+    text-transform: uppercase;
+}
+ 
+ 
+ tr{
+     border: 2px solid red;
+ }
+ 
+ td:hover:nth-child(4){
+     background-color: red;
+ }
+ 
+ 
+ 
+ td{
+     border: 1px solid rosybrown;
+     padding: 6px;
+ }
+ th{
+     font-size: 17px;
+     text-shadow: 4px 4px 8px gray;
+     border: 2px solid rosybrown;
+     padding: 8px;
+     background-color: darkslategrey;
+     color:white;
+ }
+
+ td:nth-child(even){
+     background-color: darkslateblue;
+ }
+ td:nth-child(odd){
+     background-color: dimgray;
+ }
+ td:hover{
+    background-color: green;
+}
+
+
+ .weather{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .heading{
+    text-align: center;
+  }
+  .box{
+    width: 25vw;
+    height: 60vh;
+    background:#a5bbdd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    box-shadow: 4px 4px 8px black;
+  }
+  
+  .inputfield{
+    
+    border-radius: 5rem;
+    width: 100%;
+    margin:auto;
+    padding: 10px 10px;
+    outline: none;
+    font-size: 20px;
+  }
+  
+  
+  
+  .temp, .location{
+    text-align: center;
+  }
+
+  
+
+  @media(max-width: 768px){
+   .box{
+       width: 70%;
+       
+   }
+
+   .main-div{
+       width: 100%;
+   }
+
+   h1 ,h2, h3{
+       font-size: 11px;
+
+   }
+   
+   table{
+      
+       font-size: 13px;
+   }
+   
+   .inputfield{
+       width: 100%;
+       margin:auto;
+       font-size: 12px;
+   }
+  }
