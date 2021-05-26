@@ -9,7 +9,11 @@ const App=()=>{
   return (
       <>
       <Menu />
+      <h1>Welcome</h1>
+      <h2>▶️ Get latest update</h2>
       <Switch>
+           
+          
             <Route  exact path="/" component={Home}  />     
             <Route  exact path="/Weather" component={Weather} />
             <Route  exact path="/Covid" component={Covid} />
